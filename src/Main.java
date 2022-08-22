@@ -98,5 +98,16 @@ public class Main {
             if (flag == true)
                 break;
         }
+
+        //Задание №9
+        System.out.println();
+        for (int i = 0; i < arrNum.length / 2; i++){
+            for (int j = arrNum.length - 1;j >= arrNum.length / 2; j--){
+                if (arrNum[i] + arrNum[j] == -2) {
+                    System.out.println(arrNum[i] + " " + arrNum[j]);
+                    break;
+                }
+            }
+        }
     }
 }
