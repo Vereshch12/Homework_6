@@ -12,15 +12,26 @@ public class Main {
     }
     public static void main(String[] args) {
         System.out.println(Arrays.toString(arr));
-        System.out.println("\n");
 
         //Задание №1
         int[] monthlyExpenses = arr;
         int sum = 0;
         for (int i : monthlyExpenses) {
-            System.out.print(i + " ");
             sum += i;
         }
         System.out.println("\nСумма трат за месяц составила " + sum + " рублей");
+
+        //Задание №2
+        System.out.println();
+        int minSpend = 200_001;
+        int maxSpend = 99_999;
+        for (int i: monthlyExpenses){
+            if (i < minSpend)
+                    minSpend = i;
+            else if (i > maxSpend)
+                    maxSpend = i;
+        }
+        System.out.println("Минимальная сумма трат за день составила " + minSpend + " рублей. Максимальная сумма трат за день составила " + maxSpend + "рублей");
+
     }
 }
