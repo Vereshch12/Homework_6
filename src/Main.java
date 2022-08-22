@@ -60,5 +60,16 @@ public class Main {
             }
             System.out.println();
         }
+
+        //Задание №6
+        System.out.println();
+        int[] arr1 = {5,4,3,2,1};
+        System.out.println(Arrays.toString(arr1));
+        int[] auxiliaryArr = new int[5];
+        for (int i = 0; i < arr1.length; i++)
+            auxiliaryArr[auxiliaryArr.length - 1 - i] = arr1[i];
+        for (int i = 0; i < auxiliaryArr.length; i++)
+            arr1[i] = auxiliaryArr [i];
+        System.out.println(Arrays.toString(arr1));
     }
 }
