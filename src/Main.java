@@ -36,6 +36,6 @@ public class Main {
         //Задание №3
         System.out.println();
         float averageSpend = (float) sum / arr.length;
-        System.out.println(averageSpend);
+        System.out.println("Средняя сумма трат за месяц составила " + averageSpend + " рублей");
     }
 }
