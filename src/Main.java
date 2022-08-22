@@ -50,7 +50,7 @@ public class Main {
         int[][] matrix = new int[3][3];
         for (int i = 0; i < matrix.length; i++){
             for (int j = 0; j < matrix.length; j++){
-                if ((i == j) || ((i == matrix.length - 1) - j))
+                if ((i == j) || (i == matrix.length - 1 - j))
                     matrix[i][j] = 1;
             }
         }
