@@ -63,13 +63,24 @@ public class Main {
 
         //Задание №6
         System.out.println();
-        int[] arr1 = {5,4,3,2,1,0};
+        int[] arr1 = {5,4,3,2,1};
         System.out.println(Arrays.toString(arr1));
         int[] auxiliaryArr = new int[arr1.length];
         for (int i = 0; i < arr1.length; i++)
             auxiliaryArr[auxiliaryArr.length - 1 - i] = arr1[i];
         for (int i = 0; i < auxiliaryArr.length; i++)
             arr1[i] = auxiliaryArr [i];
+        System.out.println(Arrays.toString(arr1));
+
+        //Задание №7
+        System.out.println();
+        System.out.println(Arrays.toString(arr1));
+        int r; //вспомогательная переменная
+        for (int i = 0; i < (arr1.length) / 2; i++){
+            r = arr1[i];
+            arr1[i] = arr1[arr1.length - 1 - i];
+            arr1[arr1.length - 1 - i] = r;
+        }
         System.out.println(Arrays.toString(arr1));
     }
 }
