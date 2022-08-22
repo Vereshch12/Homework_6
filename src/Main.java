@@ -44,5 +44,21 @@ public class Main {
         for (int i = reverseFullName.length - 1; i >= 0; i--){
             System.out.print(reverseFullName[i]);
         }
+
+        //Задание №5
+        System.out.println("\n");
+        int[][] matrix = new int[3][3];
+        for (int i = 0; i < matrix.length; i++){
+            for (int j = 0; j < matrix.length; j++){
+                if ((i == j) || ((i == matrix.length - 1) - j))
+                    matrix[i][j] = 1;
+            }
+        }
+        for (int[] row : matrix) {
+            for (int column : row) {
+                System.out.print(column + " ");
+            }
+            System.out.println();
+        }
     }
 }
