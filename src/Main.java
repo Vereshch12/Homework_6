@@ -33,5 +33,9 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила " + minSpend + " рублей. Максимальная сумма трат за день составила " + maxSpend + "рублей");
 
+        //Задание №3
+        System.out.println();
+        float averageSpend = (float) sum / arr.length;
+        System.out.println(averageSpend);
     }
 }
