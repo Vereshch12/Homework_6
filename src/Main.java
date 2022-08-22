@@ -82,5 +82,21 @@ public class Main {
             arr1[arr1.length - 1 - i] = r;
         }
         System.out.println(Arrays.toString(arr1));
+
+        //Задание №8
+        System.out.println();
+        int[] arrNum = {-6,2,5,-8,8,10,4,-7,12,1};
+        boolean flag = false;
+        for (int i = 0; i < arrNum.length / 2; i++){
+            for (int j = arrNum.length - 1;j >= arrNum.length / 2; j--){
+                if (arrNum[i] + arrNum[j] == -2) {
+                    System.out.println(arrNum[i] + " " + arrNum[j]);
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag == true)
+                break;
+        }
     }
 }
